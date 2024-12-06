@@ -9,17 +9,7 @@ import Foundation
 
 func dayOne(inputFileName: String) -> Int {
     // Reading
-    let fileContent = readFile(inputFileName)
-    let lines = fileContent.split(separator: "\n")
-    var left = [Int]()
-    var right = [Int]()
-    left.reserveCapacity(lines.count)
-    right.reserveCapacity(lines.count)
-    lines.forEach {
-        let numbers = $0.split(separator: " ")
-        left.append(Int(numbers.first!)!)
-        right.append(Int(numbers.last!)!)
-    }
+    var (left, right) = readInputFromFile(inputFileName)
     
     // Solving
     left.sort()
