@@ -29,11 +29,24 @@ func parseTwoLinesOfNumbers(_ fileContent: String) -> ([Int], [Int]) {
     return (left, right)
 }
 
-func readInputFromFile(_ fileName: String) -> ([Int], [Int]) {
+func parseLinesOfNumbers(_ fileContent: String) -> [[Int]] {
+    let lines = fileContent.split(separator: "\n")
+    var result: [[Int]] = []
+    for line in lines {
+        let numbers = line.split(separator: " ").compactMap { Int($0)! }
+        result.append(numbers)
+    }
+    return result
+}
+
+func readDayOneInputFromFile(_ fileName: String) -> ([Int], [Int]) {
     let fileContent = readFile(fileName)
     return parseTwoLinesOfNumbers(fileContent)
 }
 
+// MARK: - 
+
 //let result = dayOne(inputFileName: "Day1_1.txt")
-let result = dayOnePartTwo(inputFileName: "Day1_1.txt")
+//let result = dayOnePartTwo(inputFileName: "Day1_1.txt")
+let result = dayTwoPartOne("Day2_1.txt")
 print(result)

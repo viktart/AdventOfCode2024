@@ -29,6 +29,8 @@
 			membershipExceptions = (
 				Day1/Day1_0.txt,
 				Day1/Day1_1.txt,
+				Day2/Day2_0.txt,
+				Day2/Day2_1.txt,
 			);
 		};
 /* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */

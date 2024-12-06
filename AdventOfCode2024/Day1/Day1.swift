@@ -9,7 +9,7 @@ import Foundation
 
 func dayOne(inputFileName: String) -> Int {
     // Reading
-    var (left, right) = readInputFromFile(inputFileName)
+    var (left, right) = readDayOneInputFromFile(inputFileName)
     
     // Solving
     left.sort()

@@ -8,7 +8,7 @@
 import Foundation
 
 func dayOnePartTwo(inputFileName: String) -> Int {
-    var (left, right) = readInputFromFile(inputFileName)
+    var (left, right) = readDayOneInputFromFile(inputFileName)
     var result = 0
     
     right.sort()
