@@ -31,6 +31,7 @@
 				Day1/Day1_1.txt,
 				Day2/Day2_0.txt,
 				Day2/Day2_1.txt,
+				Day3/Day3_0_2.txt,
 				Day3/Day3_0.txt,
 				Day3/Day3_1.txt,
 			);
