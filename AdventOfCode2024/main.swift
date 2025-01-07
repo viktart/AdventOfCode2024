@@ -15,7 +15,7 @@ func readFile(_ fileName: String) -> String {
 }
 
 /// Returns: (left, right)
-func parseTwoLinesOfNumbers(_ fileContent: String) -> ([Int], [Int]) {
+func parseTwoColumnsOfNumbers(_ fileContent: String) -> ([Int], [Int]) {
     let lines = fileContent.split(separator: "\n")
     var left = [Int]()
     var right = [Int]()
@@ -41,7 +41,7 @@ func parseLinesOfNumbers(_ fileContent: String) -> [[Int]] {
 
 func readDayOneInputFromFile(_ fileName: String) -> ([Int], [Int]) {
     let fileContent = readFile(fileName)
-    return parseTwoLinesOfNumbers(fileContent)
+    return parseTwoColumnsOfNumbers(fileContent)
 }
 
 // MARK: - 
@@ -51,5 +51,6 @@ func readDayOneInputFromFile(_ fileName: String) -> ([Int], [Int]) {
 //let result = DayTwo.partOne("Day2_1.txt")
 //let result = DayTwo.partTwo("Day2_1.txt")
 //let result = DayThree.partOne("Day3_1.txt")
-let result = DayThree.partTwo("Day3_1.txt")
+//let result = DayThree.partTwo("Day3_1.txt")
+let result = DayFour.partOne("Day4_1.txt")
 print(result)

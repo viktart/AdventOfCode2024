@@ -34,6 +34,8 @@
 				Day3/Day3_0_2.txt,
 				Day3/Day3_0.txt,
 				Day3/Day3_1.txt,
+				Day4/Day4_0.txt,
+				Day4/Day4_1.txt,
 			);
 		};
 /* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
