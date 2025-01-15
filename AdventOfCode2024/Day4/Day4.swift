@@ -46,13 +46,13 @@ class DayFour {
                 result += isXmas(i: i, j: j, iSign: iSign, jSign: jSign) ? 1 : 0
             }
             check(noop, +)
-            check(+, +)
             check(+, noop)
+            check(+, +)
             check(-, -)
             check(noop, -)
-            check(-, -)
             check(-, noop)
             check(+, -)
+            check(-, +)
             return result
         }
         
