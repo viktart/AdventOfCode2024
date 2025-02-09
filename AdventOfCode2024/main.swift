@@ -55,5 +55,5 @@ func readDayOneInputFromFile(_ fileName: String) -> ([Int], [Int]) {
 //let result = DayFour.partOne("Day4_1.txt")
 //let result = DayFour.partTwo("Day4_0_2.txt")
 //let result = DayFour.partTwo("Day4_1.txt")
-let result = DayFive.partOne("Day5_1.txt")
+let result = DayFive.partTwo("Day5_1.txt")
 print(result)
